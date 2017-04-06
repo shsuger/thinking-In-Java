@@ -6,11 +6,19 @@ import static net.mindview.util.Print.*;
 
 public class ArrayNew {
   public static void main(String[] args) {
+    for(int i=0;i<5;i++){
+      int[] a;
+      Random rand = new Random(47+i);
+      a = new int[rand.nextInt(20)];
+      print("length of a = " + a.length);
+      print(Arrays.toString(a));
+    }
     int[] a;
     Random rand = new Random(47);
     a = new int[rand.nextInt(20)];
     print("length of a = " + a.length);
     print(Arrays.toString(a));
+
   }
 } /* Output:
 length of a = 18
